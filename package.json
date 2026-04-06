@@ -1,0 +1,19 @@
+{
+  "name": "cs-dept-academic-suite",
+  "version": "1.0.0",
+  "description": "Role-based academic operations platform for CS department",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "start:local": ".\\.tools\\node\\node-v22.14.0-win-x64\\node.exe server.js",
+    "backup:db": "node scripts/backup-db.js",
+    "restore:db": "node scripts/restore-db.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.10.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1"
+  }
+}
